@@ -1,4 +1,4 @@
-package creational.strategy.flyStrategies;
+package creational.strategy.flystrategies;
 
 import creational.strategy.interfaces.IFlyStrategy;
 

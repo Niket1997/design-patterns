@@ -1,4 +1,4 @@
-package creational.strategy.quackStrategies;
+package creational.strategy.quackstrategies;
 
 import creational.strategy.interfaces.IQuackStrategy;
 
