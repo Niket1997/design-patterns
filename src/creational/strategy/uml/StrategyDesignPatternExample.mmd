@@ -1,0 +1,35 @@
+classDiagram
+    class Duck{
+      -String name
+      -IFlyStrategy flyStrategy
+      -IQuackStrategy quackStrategy
+      +display() void
+      +fly() void
+      +quack() void
+    }
+    class IQuackStrategy {
+        <<interface>>
+        +quack() void
+    }
+    class IFlyStrategy {
+        <<interface>>
+        +fly() void
+    }
+    class MountainFly {
+        +fly() void
+    }
+    class OceanFly {
+        +fly() void
+    }
+    class EnthusiasticQuack {
+        +quack() void
+    }
+    class SadQuack {
+        +quack() void
+    }
+    IQuackStrategy <|.. SadQuack
+    IQuackStrategy <|.. EnthusiasticQuack
+    IFlyStrategy <|.. OceanFly
+    IFlyStrategy <|.. MountainFly
+    IQuackStrategy <-- Duck
+    IFlyStrategy <-- Duck

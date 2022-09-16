@@ -1,0 +1,18 @@
+classDiagram
+    class Client {
+      -IStrategy strategy
+      +execute() void
+    }
+    class IStrategy {
+        <<interface>>
+        +run() void
+    }
+    class ConcreteStrategyOne {
+        +run() void
+    }
+    class ConcreteStrategyTwo {
+        +run() void
+    }
+    IStrategy <|.. ConcreteStrategyOne
+    IStrategy <|.. ConcreteStrategyTwo
+    IStrategy <-- Client

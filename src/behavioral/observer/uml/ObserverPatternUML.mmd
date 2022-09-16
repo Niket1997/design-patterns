@@ -1,0 +1,28 @@
+classDiagram
+    class IObserver {
+        <<interface>>
+        +update()
+    }
+    class IObservable {
+        <<interface>>
+        +addObserver(IObserver) void
+        +removeObserver(IObserver) void
+        +notify()
+    }
+    class ConcreteObservable {
+        -currentState : Object
+        -observers : Set~IObserver~
+        +addObserver(IObserver) void
+        +removeObserver(IObserver) void
+        -notify() void
+        +getState() Object
+        +setState() void
+    }
+    class ConcreteObserver {
+        -observable : ConcreteObservable
+        +update()
+    }
+    IObservable <|.. ConcreteObservable : implements
+    IObservable --> "0..*" IObserver
+    IObserver <|.. ConcreteObserver : implements
+    ConcreteObservable <|-- ConcreteObserver
