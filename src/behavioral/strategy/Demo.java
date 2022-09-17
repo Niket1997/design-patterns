@@ -1,11 +1,11 @@
-package creational.strategy;
+package behavioral.strategy;
 
-import creational.strategy.flystrategies.MountainFly;
-import creational.strategy.flystrategies.OceanFly;
-import creational.strategy.interfaces.IFlyStrategy;
-import creational.strategy.interfaces.IQuackStrategy;
-import creational.strategy.quackstrategies.EnthusiasticQuack;
-import creational.strategy.quackstrategies.SadQuack;
+import behavioral.strategy.flystrategies.MountainFly;
+import behavioral.strategy.flystrategies.OceanFly;
+import behavioral.strategy.interfaces.IFlyStrategy;
+import behavioral.strategy.interfaces.IQuackStrategy;
+import behavioral.strategy.quackstrategies.EnthusiasticQuack;
+import behavioral.strategy.quackstrategies.SadQuack;
 
 public class Demo {
     public static void main(String[] args) {

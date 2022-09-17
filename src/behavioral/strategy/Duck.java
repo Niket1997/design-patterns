@@ -1,7 +1,7 @@
-package creational.strategy;
+package behavioral.strategy;
 
-import creational.strategy.interfaces.IFlyStrategy;
-import creational.strategy.interfaces.IQuackStrategy;
+import behavioral.strategy.interfaces.IFlyStrategy;
+import behavioral.strategy.interfaces.IQuackStrategy;
 
 public class Duck {
     private final String name;

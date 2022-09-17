@@ -1,4 +1,4 @@
-package creational.strategy.interfaces;
+package behavioral.strategy.interfaces;
 
 public interface IFlyStrategy {
     void fly();

@@ -1,6 +1,6 @@
-package creational.strategy.quackstrategies;
+package behavioral.strategy.quackstrategies;
 
-import creational.strategy.interfaces.IQuackStrategy;
+import behavioral.strategy.interfaces.IQuackStrategy;
 
 public class SadQuack implements IQuackStrategy {
     @Override

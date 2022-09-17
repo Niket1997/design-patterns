@@ -1,6 +1,6 @@
-package creational.strategy.flystrategies;
+package behavioral.strategy.flystrategies;
 
-import creational.strategy.interfaces.IFlyStrategy;
+import behavioral.strategy.interfaces.IFlyStrategy;
 
 public class MountainFly implements IFlyStrategy {
     @Override
