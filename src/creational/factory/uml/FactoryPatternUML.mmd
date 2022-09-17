@@ -1,0 +1,18 @@
+classDiagram
+    %% This can be interface, abstract class or just a super class
+    class Product {
+        
+    }
+    class ConcreteProduct {
+
+    }
+    Product <|-- ConcreteProduct : IS-A
+    %% This can be interface, abstract class or just a super class
+    class Creator {
+        +factoryMethod() Product
+    }
+    class ConcreteCreator {
+        +factoryMethod() Product
+    }
+    Creator <|-- ConcreteCreator : IS-A
+    
