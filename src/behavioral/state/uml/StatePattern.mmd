@@ -1,0 +1,41 @@
+classDiagram
+    class IGateState {
+        <<interface>>
+        +enter()
+				+payInit()
+				+payOk()
+				+payFailed()
+    }
+
+    class Gate {
+        +enter()
+				+payInit()
+				+payOk()
+				+payFailed()
+				+changeState(GateState gateState)
+    }
+
+    class GateStateOpen {
+        +enter()
+				+payInit()
+				+payOk()
+				+payFailed()
+    }
+
+    class GateStateClosed {
+        +enter()
+				+payInit()
+				+payOk()
+				+payFailed()
+    }
+
+    class GateStatePaymentProcessing {
+        +enter()
+				+payInit()
+				+payOk()
+				+payFailed()
+    }
+    IGateState <|-- GateStateOpen: implements
+    IGateState <|-- GateStateClosed: implements
+    IGateState <|-- GateStatePaymentProcessing: implements
+    Gate --* IGateState: has-a
